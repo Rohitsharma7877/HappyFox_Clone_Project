@@ -1,0 +1,84 @@
+#main{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+   background-color: rgb(245, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 15px 30px;
+    border: 20px;
+}
+.center{
+    display: flex;
+    gap: 60px;
+}
+
+a{color: black;
+    text-decoration: none;
+  font-size: 20px;
+}
+
+#fixed{
+  height: 40px;
+      display: flex;
+      justify-content: space-between;
+      background-color: white;
+      color: black;
+      padding: 20px 30px;
+      position: sticky;
+      top: 0px;
+      border: 20px;
+
+}
+.fixed{
+    display: flex;
+      gap: 60px;
+
+
+}
+#prefooterButton2{
+    width: 400%;
+    height: 48px;
+    border-radius: 5px;
+    border: 3px solid rgb(255, 123, 0);
+    background-color:rgb(255, 123, 0);
+    color: white;
+
+}
+#prefooterButton22{
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    border: 3px solid rgb(255, 123, 0);
+    background-color:rgb(255, 123, 0);
+    color: white;
+   
+
+}
+  
+#box{
+    width: 90%;
+    height:800px;
+    display:flex;
+    flex-direction: row;
+    
+}
+#box>div{
+    width: 50%;
+    height: 100%;
+  
+    padding-left: 80px;
+}
+#login>h1{
+    text-align: justify;
+    padding: 90px 0px 0px 0px;
+
+}
+#login>form{
+    text-align: justify;
+}
+input[type="email"]{
+    width: 350px;
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
