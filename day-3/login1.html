@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #box{
+            
+            width:30%;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 70px auto ;
+            height: auto;
+            padding: 50px 20px 10px 20px;
+            border-radius: 10px;
+            
+           
+
+        }
+        label{
+            font-size: 20px;
+            text-align: left;
+            padding:0px 310px 0px 0px ;
+            
+        }
+    
+        
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(10, 82, 82);
+            margin: 50px auto;
+        }
+        div>h1{
+            text-align: center;
+            font-size: 50px;
+            color: rgb(10, 82, 82);
+            margin: auto;
+           }
+        #em,#pa,#nm,#num{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid black;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 15px;
+        resize: vertical;
+        text-align: left;
+        }
+        
+  
+        button {
+        background-color: #2b619e;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 20px;
+        cursor:pointer;
+        width: 50%;
+        font-size: 20px;
+        margin-top: 20px;
+        
+            }
+        button:hover {
+        background-color:green;
+        }
+        hr{
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>happyfox</h1>
+
+    <div id="box">
+        <h1>sign in</h1>
+        <form>
+           
+    
+            <label for="">Email</label>
+            <input type="email" name="Email" placeholder="Email" id="em">
+            
+            <label for="">Password</label>
+            <input type="password" name="password"  placeholder="Password" id="pa">
+    
+            <button type="submit">Login</button>
+    
+           
+        <p>Forget.!<a href="" >password?</a></p>
+        <p>Don't have account? <a href="C:\Users\Lenovo\Desktop\pppppp\-mean-part-5754\day-3\signup.html">Signup</a></p>
+        </form>
+    </div>
+        
+    
+</body>
+</html>
+<script>
+    
+document.querySelector("form").addEventListener("submit",login)
+    let email=JSON.parse(localStorage.getItem("mail"))
+    let passwor=JSON.parse(localStorage.getItem("pass"))
+function login(){
+    let mail=document.querySelector("#em").value// atul@gmail
+    let pass=document.querySelector("#pa").value //1234
+
+    event.preventDefault();
+    if (email===mail && pass===passwor){
+        alert("login successfully")
+        window.location.href="file:///C:/Users/Lenovo/Desktop/pppppp/-mean-part-5754/day-3/login.html"
+        console.log(mail,pass)
+    }
+    else{
+        alert("inncorret data")
+    }
+
+    
+    }
+
+
+
+    
+</script>
